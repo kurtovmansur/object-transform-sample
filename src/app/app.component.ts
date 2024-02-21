@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DocumentServiceService } from './services/document-service.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'object-transform-sample';
+  
+  constructor(public readonly documentService:DocumentServiceService) {
+  }
 }
